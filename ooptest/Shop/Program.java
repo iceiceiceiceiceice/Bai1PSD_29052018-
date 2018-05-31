@@ -10,6 +10,9 @@ public class Program {
 	public void addBill(Bill bill){
 		bills.add(bill);
 	}
+	/**
+	 *  this function show all the bills in the list 
+	 */
 	public void getBills(){
 		System.out.println("danh sach hoa don");
 		if(bills.size()==0){
@@ -21,6 +24,11 @@ public class Program {
 			}
 		}
 	}
+	
+	/* this function show the id of the customer that have the number of good he bought is the biggest in the list */
+	/**
+	 * 
+	 */
 	public String getBiggestCustomer(){
 		String id = "";
 		int max = 0;
@@ -45,6 +53,10 @@ public class Program {
 		return id;
 	}
 	
+	/* this function calculate the total price of each type of good in the bill list */
+	/**
+	 * 
+	 */
 	public void calculateEachTypePrice(){
 		System.out.println("Sumary value of each type of good");
 		int priceBook = 0, priceCassetTape = 0, priceCD = 0 ;

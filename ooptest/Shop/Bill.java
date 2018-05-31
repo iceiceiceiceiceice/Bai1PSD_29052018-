@@ -42,6 +42,8 @@ public class Bill {
 	public Customer getCustomer(){
 		return this.customer;
 	}
+	
+	/* this function calculate all the price of the bill and define the discount */
 	public int getTotalPrice(){
 		int value = 0;
 		for(int i = 0 ; i< goods.size();i++){
@@ -53,7 +55,7 @@ public class Bill {
 		}
 		return value;	
 	}
-	
+	/* this function return the price of type of good as "type" in the bill */
 	public int calculateTypePrice(String type){
 		int value = 0;
 		for(int i = 0 ; i < goods.size();i++){

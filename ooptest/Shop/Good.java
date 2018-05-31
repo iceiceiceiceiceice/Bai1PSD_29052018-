@@ -59,6 +59,7 @@ public class Good {
 				+ (publisher != null ? "publisher=" + publisher + ", " : "") + "type=" + type + ", price=" + price
 				+ "]";
 	}
+	/* this function check if 2 object Good is the same */ 
 	public boolean equal(Good good){
 		if(this.id!=good.id) return false;
 		else return true;
