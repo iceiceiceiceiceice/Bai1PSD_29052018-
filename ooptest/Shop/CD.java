@@ -20,5 +20,10 @@ public class CD extends Good {
 	public void setDuration(int duration) {
 		this.duration = duration;
 	}
-	
+	@Override
+	public String toString(){
+		return "Good [" + (id != null ? "id=" + id + ", " : "") + (title != null ? "title=" + title + ", " : "")
+				+ (publisher != null ? "publisher=" + publisher + ", " : "") + "type=" + type + ", price=" + price
+				+ ", duration :"+duration+"]";
+	}
 }
